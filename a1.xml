@@ -30,8 +30,6 @@
         </default>
     </default>
 
-    <include file="../unitree_sim/basic_scene.xml"/>
-
     <worldbody>
         <body name="a1_torso" pos="0 0 0.45" childclass="unitree">
             <geom size="0.0005 0.0005 0.0005" type="box" contype="0" conaffinity="0" group="1"/>
@@ -39,7 +37,7 @@
             <geom size="0.1335 0.097 0.057" type="box"/>
             <geom size="0.0005 0.0005 0.0005" type="box" contype="0" conaffinity="0" group="1" rgba="0.8 0 0 1"/>
             <geom size="0.0005 0.0005 0.0005" type="box" rgba="0.8 0 0 1"/>
-            <freejoint/>
+            <site name="a1_torso" />
             <body name="FR_hip" pos="0.183 -0.047 0">
                 <inertial pos="-0.003311 -0.000635 3.1e-05" quat="0.507528 0.506268 0.491507 0.494499" mass="0.696" diaginertia="0.000807752 0.00055293 0.000468983"/>
                 <joint name="FR_hip" pos="0 0 0" axis="1 0 0" limited="true" range="-0.802851 0.802851"/>
@@ -137,5 +135,12 @@
         <position name="RL_thigh" kp="60" joint="RL_thigh" class="unitree" ctrlrange="-1.0472 4.18879"/>
         <position name="RL_calf" kp="93.3" joint="RL_calf" class="unitree" ctrlrange="-2.69653 -0.916298"/>
     </actuator>
+
+    <sensor>
+        <gyro name="sensor_gyro" site="a1_torso"/>
+        <accelerometer name="accelerometer" site="a1_torso"/>
+        <framequat name="framequat" objtype='site' objname="a1_torso"/>
+        <velocimeter name="velocimeter" site="a1_torso"/>
+    </sensor>
 
 </mujoco>
