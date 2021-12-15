@@ -124,16 +124,16 @@
     <actuator>
         <position name="FR_hip" kp="60" joint="FR_hip" class="unitree" ctrlrange="-0.802851 0.802851"/>
         <position name="FR_thigh" kp="60" joint="FR_thigh" class="unitree" ctrlrange="-1.0472 4.18879"/>
-        <position name="FR_calf" kp="93.3" joint="FR_calf" class="unitree" ctrlrange="-2.69653 -0.916298"/>
+        <position name="FR_calf" kp="60" joint="FR_calf" class="unitree" ctrlrange="-2.69653 -0.916298"/>
         <position name="FL_hip" kp="60" joint="FL_hip" class="unitree" ctrlrange="-0.802851 0.802851"/>
         <position name="FL_thigh" kp="60" joint="FL_thigh" class="unitree" ctrlrange="-1.0472 4.18879"/>
-        <position name="FL_calf" kp="93.3" joint="FL_calf" class="unitree" ctrlrange="-2.69653 -0.916298"/>
+        <position name="FL_calf" kp="60" joint="FL_calf" class="unitree" ctrlrange="-2.69653 -0.916298"/>
         <position name="RR_hip" kp="60" joint="RR_hip" class="unitree" ctrlrange="-0.802851 0.802851"/>
         <position name="RR_thigh" kp="60" joint="RR_thigh" class="unitree" ctrlrange="-1.0472 4.18879"/>
-        <position name="RR_calf" kp="93.3" joint="RR_calf" class="unitree" ctrlrange="-2.69653 -0.916298"/>
+        <position name="RR_calf" kp="60" joint="RR_calf" class="unitree" ctrlrange="-2.69653 -0.916298"/>
         <position name="RL_hip" kp="60" joint="RL_hip" class="unitree" ctrlrange="-0.802851 0.802851"/>
         <position name="RL_thigh" kp="60" joint="RL_thigh" class="unitree" ctrlrange="-1.0472 4.18879"/>
-        <position name="RL_calf" kp="93.3" joint="RL_calf" class="unitree" ctrlrange="-2.69653 -0.916298"/>
+        <position name="RL_calf" kp="60" joint="RL_calf" class="unitree" ctrlrange="-2.69653 -0.916298"/>
     </actuator>
 
     <sensor>
